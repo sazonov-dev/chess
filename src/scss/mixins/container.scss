@@ -2,3 +2,8 @@
   max-width: $width;
   margin: 0 auto;
 }
+
+@mixin min-container($width) {
+  min-width: $width;
+  margin: 0 auto;
+}

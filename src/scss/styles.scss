@@ -2,6 +2,10 @@
  @use '../fonts/fonts.scss';
  @use '../blocks/body/body.scss';
 
+ @use '../blocks/main/main.scss';
+ @use '../blocks/main/__title/main__title.scss';
+ @use '../blocks/main/__description/main__description.scss';
+
  @use '../blocks/header/header.scss';
  @use '../blocks/header/__logo/header__logo.scss';
  @use '../blocks/header/__nav/header__nav.scss';
@@ -9,3 +13,9 @@
 
  @use '../blocks/button/button.scss';
 
+ @use '../blocks/content/content.scss';
+ @use '../blocks/content/__container/content__container.scss';
+ @use '../blocks/content/__container-info/content__container-info.scss';
+ @use '../blocks/content/__container-chess-img/content__container-chess-img.scss';
+ @use '../blocks/content/__graphic/content__graphic.scss';
+ @use '../blocks/content/__mobile-info/content__mobile-info.scss';

@@ -1,0 +1,26 @@
+@use 'mixins' as *;
+
+.content__graphic {
+  @include position(absolute, 72px, -160px, null, null, 1);
+  width: 640px;
+  height: 640px;
+  background-image: url("../../../images/content/vector-graphic.svg");
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 920px) {
+  .content__graphic {
+    background-image: url("../../../images/content/vector-graphic-tablet.svg");
+    width: 260px;
+    height: 520px;
+    top: 266px;
+    right: -130px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .content__graphic {
+    display: none;
+  }
+}

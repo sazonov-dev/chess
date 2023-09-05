@@ -9,6 +9,17 @@
   justify-content: center;
 }
 
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+@mixin flex-start-between {
+  @include flex-start;
+  justify-content: space-between;
+}
+
 @mixin flex-center-between {
   @include flex-center;
   justify-content: space-between;
@@ -16,6 +27,16 @@
 
 @mixin flex-center-column {
   @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-start-column {
+  @include flex-start;
+  flex-direction: column;
+}
+
+@mixin flex-start-column-between {
+  @include flex-start-between;
   flex-direction: column;
 }
 

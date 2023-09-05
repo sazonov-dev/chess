@@ -1,0 +1,9 @@
+@use 'mixins' as *;
+
+.content {
+  width: 100%;
+  overflow: hidden;
+  @include flex-start;
+  @include position(relative, null, null, null, null, 0);
+  padding: 60px 0 80px 0;
+}
