@@ -1,0 +1,6 @@
+@use 'mixins' as *;
+
+.header__nav {
+  @include flex-center;
+  gap: 50px;
+}

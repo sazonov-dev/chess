@@ -1,2 +1,11 @@
  @use '../vendor/normalize.css';
  @use '../fonts/fonts.scss';
+ @use '../blocks/body/body.scss';
+
+ @use '../blocks/header/header.scss';
+ @use '../blocks/header/__logo/header__logo.scss';
+ @use '../blocks/header/__nav/header__nav.scss';
+ @use '../blocks/header/__nav-link/header__nav-link.scss';
+
+ @use '../blocks/button/button.scss';
+

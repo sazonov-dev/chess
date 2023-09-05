@@ -1,0 +1,33 @@
+.button {
+  all: unset;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0.15px;
+  color: #fff;
+  padding: 15px 28px;
+  border-radius: 8px;
+  background-color: #009465;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.button:hover {
+  background-color: #066C4C;
+}
+
+@media screen and (max-width: 768px) {
+  .button {
+    font-size: 13px;
+    letter-spacing: 0.13px;
+    padding: 13px 22px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .button {
+    font-size: 10px;
+    letter-spacing: 0.1px;
+    padding: 6px 16px;
+  }
+}
