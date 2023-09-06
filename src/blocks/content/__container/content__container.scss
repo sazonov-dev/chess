@@ -6,7 +6,7 @@
   @include flex-start-column;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 1120px) {
   .content__container {
     @include min-container(668px);
   }

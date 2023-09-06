@@ -1,0 +1,19 @@
+.battle {
+  position: relative;
+}
+
+.battle-scroll-container {
+  padding: 110px 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .battle-scroll-container {
+    padding: 140px 0;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .battle-scroll-container {
+    padding: 60px 0 30px 0;
+  }
+}

@@ -1,0 +1,29 @@
+.chessboard {
+  max-width: 416px;
+  height: 104px;
+}
+
+.chessboard-content {
+  margin-top: 182px;
+}
+
+.chessboard-battle {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .chessboard-content {
+    margin-top: 212px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .chessboard {
+    max-width: 280px;
+    height: 70px;
+  }
+
+  .chessboard-content {
+    margin-top: 110px;
+  }
+}

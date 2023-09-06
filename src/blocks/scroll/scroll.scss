@@ -1,19 +1,25 @@
 @use 'mixins' as *;
 
-.header {
-  @include flex-center-between;
+.scroll {
   @include max-container(1120px);
-  padding-top: 26px;
+  @include flex-start-column;
+  padding-top: 80px;
+  overflow: hidden;
+}
+
+.scroll-battle {
+  position: relative;
 }
 
 @media screen and (max-width: 1120px) {
-  .header {
+  .scroll {
     @include max-container(668px);
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 670px){
-  .header {
-    @include max-container(280px)
+  .scroll {
+    @include max-container(280px);
+    padding: 20px 0 0 0;
   }
 }

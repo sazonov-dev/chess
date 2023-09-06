@@ -22,14 +22,16 @@
  @use '../blocks/content/__mobile-info/content__mobile-info.scss';
 
  @use '../blocks/team/team.scss';
-
  @use '../blocks/team-top/team-top.scss';
- @use '../blocks/team-top/__players/team-top__players.scss';
- @use '../blocks/team-top/__players-card/team-top__players-card.scss';
- @use '../blocks/team-top/__players-card-img/team-top__players-card-img.scss';
- @use '../blocks/team-top/__players-card-info/team-top__players-card-info.scss';
- @use '../blocks/team-top/__players-card-name/team-top__players-card-name.scss';
- @use '../blocks/team-top/__players-card-description/team-top__players-card-description.scss';
+
+ @use '../blocks/scroll/scroll.scss';
+ @use '../blocks/scroll/__container/scroll__container.scss';
+ @use '../blocks/scroll/__container-card/scroll__container-card.scss';
+ @use '../blocks/scroll/__container-card-info/scroll__container-card-info.scss';
+ @use '../blocks/scroll/__container-img/scroll__container-img.scss';
+ @use '../blocks/scroll/__container-description/scroll__container-description.scss';
+ @use '../blocks/scroll/__container-name/scroll__container-name.scss';
+
 
  @use '../blocks/dots-container/dots-container.scss';
 
@@ -38,3 +40,11 @@
  @use '../blocks/team-bottom/__content-graphic/team-bottom__content-graphic.scss';
  @use '../blocks/team-bottom/__content-info/team-bottom__content-info.scss';
  @use '../blocks/team-bottom/__content-mobile/team-bottom__content-mobile.scss';
+
+ @use '../blocks/chessboard/chessboard.scss';
+ @use '../blocks/chessboard/__block/chessboard__block.scss';
+ @use '../blocks/chessboard/__line/chessboard__line.scss';
+
+ @use '../blocks/battle/battle.scss';
+ @use '../blocks/battle/__bottom/battle__bottom.scss';
+ @use '../blocks/battle/__graphic/battle__graphic.scss';

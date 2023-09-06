@@ -1,9 +1,27 @@
 import './scss/styles.scss';
 
-const updateActiveDot = () => {
-    const scrollContainer = document.querySelector('.team-top__players');
-    const dots = document.querySelectorAll('.dot');
-    const cardWidth = scrollContainer.querySelector('.team-top__players-card').offsetWidth;
+const updateActiveDotTeam = () => {
+    const scroll = document.querySelector('.scroll-team');
+    const scrollContainer = scroll.querySelector('.scroll__container');
+    const dotsTeam = document.querySelector('.dots-team')
+    const dots = dotsTeam.querySelectorAll('.dot');
+    const cardWidth = scrollContainer.querySelector('.scroll__container-card').offsetWidth;
+    const scrollLeft = scrollContainer.scrollLeft;
+    const activeIndex = Math.floor(scrollLeft / cardWidth);
+
+    dots.forEach(dot => dot.classList.remove('active-dot'));
+
+    if (dots[activeIndex]) {
+        dots[activeIndex].classList.add('active-dot');
+    }
+}
+
+const updateActiveDotBattle = () => {
+    const scroll = document.querySelector('.scroll-battle');
+    const scrollContainer = scroll.querySelector('.scroll__container');
+    const dotsBattle = document.querySelector('.dots-battle');
+    const dots = dotsBattle.querySelectorAll('.dot');
+    const cardWidth = scrollContainer.querySelector('.scroll__container-card').offsetWidth;
     const scrollLeft = scrollContainer.scrollLeft;
     const activeIndex = Math.floor(scrollLeft / cardWidth);
 
@@ -26,11 +44,56 @@ const appendDots = (count, section) => {
     }
 }
 
-if (document.querySelector('#general')) {
-    const scrollContainer = document.querySelector('.team-top__players');
-    const scrollContainerLength = Array.from(scrollContainer.querySelectorAll('.team-top__players-card')).length;
-    const dotContainer = document.querySelector('.dots-container');
+const getChessboardElements = (className) => {
+    const chessboard = document.querySelector(className)
+    const chessboardLineOne = chessboard.querySelectorAll('.line-one');
+    const chessboardLineTwo = chessboard.querySelectorAll('.line-two');
+    const chessboardElements = {
+        lineOne: [],
+        lineTwo: []
+    }
 
-    appendDots(scrollContainerLength, dotContainer);
-    scrollContainer.addEventListener('scroll', updateActiveDot);
+    for (let i = 0; i < chessboardLineOne.length; i++) {
+        chessboardElements.lineOne.push(...Array.from(chessboardLineOne[i].children));
+    }
+
+    for (let i = 0; i < chessboardLineTwo.length; i++) {
+        chessboardElements.lineTwo.push(...Array.from(chessboardLineTwo[i].children));
+    }
+
+    return chessboardElements;
+}
+
+const setColorToChessboardElements = (elements, color) => {
+    const {lineOne, lineTwo} = elements;
+    for (let i = 0; i < lineOne.length; i++) {
+        if (i % 2 === 1) {
+            lineOne[i].style.backgroundColor = color;
+        }
+    }
+
+    for (let i = 0; i < lineTwo.length; i++) {
+        if (i % 2 === 0) {
+            lineTwo[i].style.backgroundColor = color;
+        }
+    }
+}
+
+if (document.querySelector('#general')) {
+    const chessboardContentElements = getChessboardElements('.chessboard-content');
+    const chessboardBattleElements = getChessboardElements('.chessboard-battle');
+    setColorToChessboardElements(chessboardContentElements, '#5036E6')
+    setColorToChessboardElements(chessboardBattleElements, '#009465')
+
+    const scrollContainerTeam = document.querySelector('.scroll-team').querySelector('.scroll__container');
+    const scrollContainerBattle = document.querySelector('.scroll-battle').querySelector('.scroll__container');
+    const scrollContainerTeamLength = Array.from(scrollContainerTeam.querySelectorAll('.scroll__container-card')).length;
+    const scrollContainerBattleLength = Array.from(scrollContainerBattle.querySelectorAll('.scroll__container-card')).length;
+    const dotContainerTeam = document.querySelector('.dots-team');
+    const dotContainerBattle = document.querySelector('.dots-battle');
+
+    appendDots(scrollContainerTeamLength, dotContainerTeam);
+    appendDots(scrollContainerBattleLength, dotContainerBattle);
+    scrollContainerTeam.addEventListener('scroll', updateActiveDotTeam);
+    scrollContainerBattle.addEventListener('scroll', updateActiveDotBattle);
 }
