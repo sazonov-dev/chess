@@ -65,6 +65,10 @@ module.exports = {
             template: path.resolve(__dirname, "src", "index.html"),
             filename: 'index.html'
         }),
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, "src", "pages", "registration.html"),
+            filename: 'registration.html'
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin()
     ]

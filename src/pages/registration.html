@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+</head>
+<body class="body">
+    <main class="main">
+        <form action="#" class="reg-form">
+            <a href="#" class="reg-form__link">
+                <img class="body__logo" src="<%=require('../images/logotype/chess-logo.svg')%>" alt="Логотип сайта">
+            </a>
+            <h2 class="reg-form__title">Регистрация</h2>
+            <div class="reg-form__inputs">
+                <input type="text" class="reg-form__input" id="input-name" placeholder="Имя" onfocus="this.placeholder=''" onblur="this.placeholder='Имя'">
+                <input type="email" class="reg-form__input" id="input-email" placeholder="Email" onfocus="this.placeholder=''" onblur="this.placeholder='Email'">
+            </div>
+            <button class="button" type="submit">Зарегистрироваться</button>
+        </form>
+    </main>
+</body>
+</html>

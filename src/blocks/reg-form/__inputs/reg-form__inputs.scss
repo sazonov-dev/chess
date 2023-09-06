@@ -1,0 +1,21 @@
+@use 'mixins' as *;
+
+.reg-form__inputs {
+  @include flex-center-column;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 253px;
+}
+
+@media screen and (max-width: 1120px) {
+  .reg-form__inputs {
+    margin-bottom: 243px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .reg-form__inputs {
+    gap: 10px;
+    margin-bottom: 143px;
+  }
+}

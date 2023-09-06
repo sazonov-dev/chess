@@ -79,7 +79,12 @@ const setColorToChessboardElements = (elements, color) => {
     }
 }
 
+const regButtonRedirect = (event) => {
+    window.location.href = window.location.href + 'registration.html';
+}
+
 if (document.querySelector('#general')) {
+    const regButton = document.querySelectorAll('#reg-button');
     const chessboardContentElements = getChessboardElements('.chessboard-content');
     const chessboardBattleElements = getChessboardElements('.chessboard-battle');
     setColorToChessboardElements(chessboardContentElements, '#5036E6')
@@ -96,4 +101,6 @@ if (document.querySelector('#general')) {
     appendDots(scrollContainerBattleLength, dotContainerBattle);
     scrollContainerTeam.addEventListener('scroll', updateActiveDotTeam);
     scrollContainerBattle.addEventListener('scroll', updateActiveDotBattle);
+
+    regButton.forEach((button) => button.addEventListener('click', regButtonRedirect))
 }

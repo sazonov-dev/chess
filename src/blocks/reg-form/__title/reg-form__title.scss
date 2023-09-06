@@ -1,0 +1,13 @@
+.reg-form__title {
+  font-size: 34px;
+  font-weight: 600;
+  line-height: 90%;
+  margin-bottom: 78px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .reg-form__title {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+}

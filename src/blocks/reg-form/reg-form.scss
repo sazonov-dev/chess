@@ -1,0 +1,13 @@
+@use 'mixins' as *;
+
+.reg-form {
+  @include max-container(500px);
+  @include flex-center-column;
+  padding: 120px 0;
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .reg-form {
+    @include max-container(280px);
+  }
+}
