@@ -1,0 +1,20 @@
+.team-bottom__content-graphic {
+  background-image: url("../../../images/team-bottom/desktop-graphic.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 880px;
+  height: 440px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 920px) {
+  .team-bottom__content-graphic {
+    background-image: url("../../../images/team-bottom/tablet-graphic.svg");
+    width: 200px;
+    height: 360px;
+  }
+}

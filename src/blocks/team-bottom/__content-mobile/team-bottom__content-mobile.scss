@@ -1,0 +1,15 @@
+@use 'mixins' as *;
+
+.team-bottom__content-mobile {
+  display: none;
+  max-width: 280px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .team-bottom__content-mobile {
+    @include flex-center-column;
+    gap: 60px;
+  }
+}

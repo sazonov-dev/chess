@@ -1,0 +1,26 @@
+.dots-container {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 50%;
+}
+
+.active-dot {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .dots-container {
+    display: flex;
+    padding-bottom: 60px;
+  }
+}

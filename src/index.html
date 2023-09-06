@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Шахматный клуб</title>
 </head>
-<body class="body">
+<body class="body" id="general">
     <header class="header">
         <a class="header__link" href="#">
             <img class="header__logo" src="<%=require('./images/logotype/chess-logo.svg')%>" alt="Логотип сайта">
@@ -30,6 +30,53 @@
                 <img class="content__container-chess-img" src="<%=require('./images/content/chess-img.svg')%>" alt="Изображение шахматной доски">
             </div>
             <div class="content__graphic"></div>
+        </section>
+        <section class="team">
+            <div class="team-top">
+                <h2 class="main__title main__title-full">Наша команда</h2>
+                <p class="main__description">Лучшие шахматисты и шахматистки любители России, гройсмейстеры, с ними играть — одно удовольствие!</p>
+                <div class="team-top__players">
+                    <div class="team-top__players-card">
+                        <img class="team-top__players-card-img" src="<%=require('./images/team/andrey.jpeg')%>" alt="Фотография игрока команды">
+                        <div class="team-top__players-card-info">
+                            <h5 class="team-top__players-card-name">андрей</h5>
+                            <p class="team-top__players-card-description">Шахматист, писатель.</p>
+                        </div>
+                    </div>
+                    <div class="team-top__players-card">
+                        <img class="team-top__players-card-img" src="<%=require('./images/team/nikita.jpeg')%>" alt="Фотография игрока команды">
+                        <div class="team-top__players-card-info">
+                            <h5 class="team-top__players-card-name">никита</h5>
+                            <p class="team-top__players-card-description">Шахматист, кулинар.</p>
+                        </div>
+                    </div>
+                    <div class="team-top__players-card">
+                        <img class="team-top__players-card-img" src="<%=require('./images/team/alexey.jpeg')%>" alt="Фотография игрока команды">
+                        <div class="team-top__players-card-info">
+                            <h5 class="team-top__players-card-name">алексей</h5>
+                            <p class="team-top__players-card-description">Шахматист, геймер.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="dots-container">
+                </div>
+            </div>
+            <div class="team-bottom">
+                <div class="team-bottom__content">
+                    <div class="team-bottom__content-graphic"></div>
+                    <div class="team-bottom__content-info">
+                        <h2 class="main__title">Хочешь в комаду?</h2>
+                        <p class="main__description">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+                    </div>
+                </div>
+                <div class="team-bottom__content-mobile">
+                    <div class="team-bottom__content-info-mobile">
+                        <h2 class="main__title">Хочешь в комаду?</h2>
+                        <p class="main__description">Свяжись с нами и мы обсудим все детали присоеденения к команде.</p>
+                    </div>
+                    <img class="team-bottom__content-mobile-img" src="<%=require('./images/team-bottom/mobile-graphic.svg')%>" alt="Изображение вектороной графики">
+                </div>
+            </div>
         </section>
     </main>
 </body>

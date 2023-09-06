@@ -1,0 +1,7 @@
+@use 'mixins' as *;
+
+.team {
+  @include flex-start-column;
+  width: 100%;
+  background-color: #5036E6;
+}

@@ -1,0 +1,13 @@
+.team-top__players-card-img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 670px){
+  .team-top__players-card-img {
+    width: 280px;
+    height: 280px;
+  }
+}
