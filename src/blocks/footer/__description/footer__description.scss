@@ -1,0 +1,6 @@
+@use 'mixins' as *;
+
+.footer__description {
+  @include flex-center-column;
+  gap: 20px;
+}

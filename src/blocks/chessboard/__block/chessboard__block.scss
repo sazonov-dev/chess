@@ -2,6 +2,9 @@
   width: 26px;
   height: 26px;
   background-color: #fff;
+  &:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 670px){
@@ -9,8 +12,4 @@
     width: 17.5px;
     height: 17.5px;
   }
-}
-
-.chessboard__block:hover {
-  transform: scale(1.2);
 }

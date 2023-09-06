@@ -1,6 +1,7 @@
  @use '../vendor/normalize.css';
  @use '../fonts/fonts.scss';
  @use '../blocks/body/body.scss';
+ @use '../blocks/body/__logo/body__logo.scss';
 
  @use '../blocks/main/main.scss';
  @use '../blocks/main/__title/main__title.scss';
@@ -8,7 +9,6 @@
  @use '../blocks/main/__description/main__description.scss';
 
  @use '../blocks/header/header.scss';
- @use '../blocks/header/__logo/header__logo.scss';
  @use '../blocks/header/__nav/header__nav.scss';
  @use '../blocks/header/__nav-link/header__nav-link.scss';
 
@@ -48,3 +48,8 @@
  @use '../blocks/battle/battle.scss';
  @use '../blocks/battle/__bottom/battle__bottom.scss';
  @use '../blocks/battle/__graphic/battle__graphic.scss';
+
+ @use '../blocks/footer/footer.scss';
+ @use '../blocks/footer/__content/footer__content.scss';
+ @use '../blocks/footer/__description/footer__description.scss';
+ @use '../blocks/footer/__description-copyright/footer__description-copyright.scss';

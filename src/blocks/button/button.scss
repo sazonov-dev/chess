@@ -10,10 +10,9 @@
   border-radius: 8px;
   background-color: #009465;
   transition: background-color 0.25s ease-in-out;
-}
-
-.button:hover {
-  background-color: #066C4C;
+  &:hover {
+    background-color: #066C4C;
+  }
 }
 
 @media screen and (max-width: 1120px) {
